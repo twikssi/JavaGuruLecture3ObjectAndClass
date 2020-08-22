@@ -17,4 +17,10 @@ public class DogDemo {
         logger.info(dogBark);
         return dogBark;
     }
+
+    public String eat() {
+        String eat ="Dog " + dog.getName() + " is eating nom nom nom";
+        logger.info(eat);
+        return eat;
+    }
 }
