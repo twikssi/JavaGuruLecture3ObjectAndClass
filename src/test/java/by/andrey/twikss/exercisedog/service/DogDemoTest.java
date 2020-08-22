@@ -24,10 +24,9 @@ public class DogDemoTest extends TestCase {
         DogDemo dogDemo = new DogDemo(dog);
 
         boolean expected = true;
-        boolean actual = true;
+        boolean actual = dogDemo.eat().equals("Dog kloka is eating nom nom nom");
 
         assertEquals(expected, actual);
-
     }
 
 }
