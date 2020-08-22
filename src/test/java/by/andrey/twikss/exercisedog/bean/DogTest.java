@@ -7,11 +7,22 @@ import static org.junit.Assert.*;
 public class DogTest extends TestCase {
 
     @Test
-    public void testTestEquals() {
+    public void testTestEqualsFalse() {
         Dog dog1 = new Dog(3,"red","krid");
         var dog2 = new Dog(4,"green","vlad");
 
         boolean expected = false;
+        boolean actual = dog1.equals(dog2);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testTestEqualsTrue() {
+        Dog dog1 = new Dog(3,"red","krid");
+        var dog2 = new Dog(3,"red","krid");
+
+        boolean expected = true;
         boolean actual = dog1.equals(dog2);
 
         assertEquals(expected, actual);
