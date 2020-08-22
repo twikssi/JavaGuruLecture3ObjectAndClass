@@ -29,4 +29,16 @@ public class DogDemoTest extends TestCase {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testifDogSleepShouldReturnTrue(){
+        Dog dog = new Dog(4,"red","kloka");
+        DogDemo dogDemo = new DogDemo(dog);
+
+        boolean expected = true;
+        boolean actual = dogDemo.sleep();
+
+        assertEquals(expected, actual);
+    }
+
+
 }
