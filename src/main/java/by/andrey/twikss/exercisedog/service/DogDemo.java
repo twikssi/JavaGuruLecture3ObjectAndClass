@@ -23,4 +23,9 @@ public class DogDemo {
         logger.info(eat);
         return eat;
     }
+
+    public boolean sleep() {
+        logger.info("Dog is sleeping");
+        return true;
+    }
 }
