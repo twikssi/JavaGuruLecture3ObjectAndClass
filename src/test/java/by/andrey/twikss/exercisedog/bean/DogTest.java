@@ -37,4 +37,14 @@ public class DogTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testTestToStringReturnValueTrue() {
+        Dog dog1 = new Dog(3,"red","krid");
+
+        boolean expected = true;
+        boolean actual = dog1.toString().equals("Dog{age=3, color='red', name='krid'}");
+
+        assertEquals(expected, actual);
+    }
 }
