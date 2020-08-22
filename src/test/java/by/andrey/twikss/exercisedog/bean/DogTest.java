@@ -27,4 +27,14 @@ public class DogTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testTestHashCodeReturnValueTrue() {
+        Dog dog1 = new Dog(3,"red","krid");
+
+        boolean expected = true;
+        boolean actual = dog1.hashCode() == 6829555;
+
+        assertEquals(expected, actual);
+    }
 }
