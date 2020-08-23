@@ -17,4 +17,14 @@ public class EncoderDemoTest extends TestCase {
         assertEquals(expected,actual);
     }
 
+    @Test
+    public void testDecodeReturnTrue(){
+        Encoder encoder = new Encoder((short) 88,'f');
+
+        boolean expected = true;
+        boolean actual = EncoderDemo.decode(encoder) == 102;
+
+        assertEquals(expected,actual);
+    }
+
 }

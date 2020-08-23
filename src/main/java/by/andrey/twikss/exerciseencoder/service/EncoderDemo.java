@@ -14,4 +14,11 @@ public class EncoderDemo {
         logger.info(textInfo);
         return encoderNumberIs;
     }
+
+    public static int decode(Encoder encoder) {
+        int decodeNumberIs = (int) encoder.getSymbol();
+        String textInfo = "" + encoder.getSymbol() + " => " + decodeNumberIs;
+        logger.info(textInfo);
+        return decodeNumberIs;
+    }
 }
