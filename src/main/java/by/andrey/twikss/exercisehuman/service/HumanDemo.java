@@ -1,6 +1,5 @@
 package by.andrey.twikss.exercisehuman.service;
 
-import by.andrey.twikss.exerciseencoder.service.EncoderDemo;
 import by.andrey.twikss.exercisehuman.bean.Human;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
