@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
 public class HumanDemo {
-    private static Logger logger = LoggerFactory.getLogger(EncoderDemo.class);
+    private static Logger logger = LoggerFactory.getLogger(HumanDemo.class);
 
     private HumanDemo() {
     }
