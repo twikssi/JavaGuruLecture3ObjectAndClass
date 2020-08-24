@@ -18,4 +18,17 @@ public class ProductDemoTest extends TestCase {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testPrintLnFormationReturnTrue(){
+        var product = new Product("Tea");
+        product.setRegularPrice(3.14);
+        product.setDiscount(0.1);
+
+        String expected = "Product : Tea, regular price = 3.14 EUR, discount = 0.1%, actual price = 2.83 EUR";
+        String actual =  ProductDemo.printlnFormation(product,ProductDemo.actualPrice(product));
+
+        assertEquals(expected, actual);
+    }
+
 }
